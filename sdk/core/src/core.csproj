@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>rf_sdk</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <WarningsAsErrors>true</WarningsAsErrors>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 

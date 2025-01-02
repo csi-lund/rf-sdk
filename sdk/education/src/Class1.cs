@@ -1,4 +1,4 @@
-﻿namespace rf_sdk;
+﻿namespace src;
 
 public class Class1
 {
