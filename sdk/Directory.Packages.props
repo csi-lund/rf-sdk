@@ -1,9 +1,19 @@
 <Project>
     <PropertyGroup>
+        <Authors>Colin Ingram</Authors>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     </PropertyGroup>
 
     <ItemGroup Label="test dependencies">
+        <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25" PrivateAssets="All"/>
         <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.10.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
         <PackageReference Include="NUnit" Version="4.2.2" />
